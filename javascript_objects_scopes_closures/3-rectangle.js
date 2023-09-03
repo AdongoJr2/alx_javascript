@@ -16,7 +16,7 @@ class Rectangle {
     }
 
     for (let i = 0; i < this.height; i++) {
-      console.log(...widthArr);
+      console.log(widthArr.join(''));
     }
   }
 }
