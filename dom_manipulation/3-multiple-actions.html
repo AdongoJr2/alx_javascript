@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating and Removing Elements</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script defer>
+    const containerElement = document.getElementById("container");
+    const pElement = document.createElement("a");
+    pElement.textContent = "New paragraph";
+    containerElement.append(pElement);
+
+    const btnElement = document.createElement("button");
+    btnElement.textContent = "Toggle Text";
+    btnElement.onclick = () => {
+        const hiddentAttr = pElement.getAttribute("hidden");
+        if (hiddentAttr) {
+            pElement.removeAttribute("hidden");
+        } else {
+            pElement.setAttribute("hidden", true);
+        }
+    }
+    containerElement.append(btnElement);
+  </script>
+</body>
+</html
