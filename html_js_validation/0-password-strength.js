@@ -28,7 +28,7 @@ function validatePassword() {
   const passwordErrorElement = document.querySelector("#error");
   passwordErrorElement.textContent = passwordErrorMessage;
 
-  if (!passwordElement) {
+  if (!passwordErrorMessage) {
     // allow form submission
     const form = document.querySelector('#passwordForm');
     form?.submit();
